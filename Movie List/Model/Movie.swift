@@ -1,5 +1,5 @@
 //
-//  Movie.swift
+//  MovieListTableViewCell.swift
 //  Movie List
 //
 //  Created by Rick Wolter on 10/18/18.
@@ -8,16 +8,13 @@
 
 import Foundation
 
-
 class Movie {
     
-    
     var name: String
-    var hasSeen: Bool
+    var hasWatched: Bool
     
-    init(name: String, hasSeen: Bool = false) {
+    init(named name: String,hasWatched: Bool = false){
         self.name = name
-        self.hasSeen = hasSeen
+        self.hasWatched = hasWatched
     }
-    
 }
