@@ -1,15 +1,26 @@
-//
-//  AddNewMovieViewController.swift
-//  Movie List
-//
-//  Created by Paul Yi on 10/18/18.
-//  Copyright © 2018 Lambda School. All rights reserved.
-//
-
 import UIKit
 
-class AddNewMovieViewController: UIViewController {
+class AddNewMovieViewController: UIViewController, MovieControllerProtocol {
+    var movieController: MovieController?
+    
 
+ 
+    @IBAction func addMovie(_ sender: Any) {
+        guard let name = movieTextField.text else { return }
+        
+        movieController?.create(name: name)
+        view.endEditing(true)
+    }
+    
+    
+    @IBOutlet weak var movieTextField: UITextField!
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

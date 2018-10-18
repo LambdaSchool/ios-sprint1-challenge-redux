@@ -69,14 +69,14 @@
 				467E198C20F5165800E7FF73 /* AppDelegate.swift */,
 				467E199320F5165900E7FF73 /* Assets.xcassets */,
 				467E199820F5165900E7FF73 /* Info.plist */,
-				467E199020F5165800E7FF73 /* Main.storyboard */,
+				4BBA7DCD2178F0D200B15811 /* Movie.swift */,
 				4BBA7DCF2178F12800B15811 /* MovieController.swift */,
+				467E199020F5165800E7FF73 /* Main.storyboard */,
 				4BBA7DD12178F28E00B15811 /* MovieTableViewController.swift */,
 				4BBA7DD32178F2A200B15811 /* MovieTableViewCell.swift */,
 				4BBA7DD52178F2C200B15811 /* AddNewMovieViewController.swift */,
 				4BBA7DD72178F2F000B15811 /* MovieListTabBarController.swift */,
 				4BBA7DD92178F2FE00B15811 /* MovieControllerProtocol.swift */,
-				4BBA7DCD2178F0D200B15811 /* Movie.swift */,
 				467E199520F5165900E7FF73 /* LaunchScreen.storyboard */,
 			);
 			path = "Movie List";

@@ -65,7 +65,7 @@
         <!--Add Movie-->
         <scene sceneID="Lcs-4h-cEr">
             <objects>
-                <viewController id="ST9-K6-vw3" sceneMemberID="viewController">
+                <viewController id="ST9-K6-vw3" customClass="AddNewMovieViewController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9xn-Q6-4wD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,12 +88,18 @@
                                 <rect key="frame" x="151" y="200" width="73" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Movie"/>
+                                <connections>
+                                    <action selector="addMovie:" destination="ST9-K6-vw3" eventType="touchUpInside" id="Ef1-DY-3el"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sYc-rc-nNC"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add Movie" selectedImage="Plus" id="ypc-ZF-VgG"/>
+                    <connections>
+                        <outlet property="movieTextField" destination="Her-pX-UKb" id="euj-Uj-lKS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v7W-NR-Det" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

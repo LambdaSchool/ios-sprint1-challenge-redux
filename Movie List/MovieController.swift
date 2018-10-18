@@ -4,7 +4,7 @@ class MovieController {
     
     private (set) var movies: [Movie] = []
     
-    func createMovie (name: String) {
+    func create(name: String) {
         let movie = Movie(name: name, watched: false)
         
         print(movies.count)
