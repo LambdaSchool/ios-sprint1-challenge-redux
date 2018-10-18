@@ -39,7 +39,7 @@
         <!--Item 1-->
         <scene sceneID="M4K-nq-Skf">
             <objects>
-                <viewController id="aVe-lo-1Ft" sceneMemberID="viewController">
+                <viewController id="aVe-lo-1Ft" customClass="AddViewController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Pc-5a-aFZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="huU-f9-kbn">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the movie's title:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="huU-f9-kbn">
                                 <rect key="frame" x="8" y="86.5" width="359" height="29.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -62,6 +62,9 @@
                                     <constraint firstAttribute="height" constant="30" id="bdd-UX-Qem"/>
                                 </constraints>
                                 <state key="normal" title="Add Movie"/>
+                                <connections>
+                                    <action selector="addButton:" destination="aVe-lo-1Ft" eventType="touchUpInside" id="LyM-nb-OAz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -80,6 +83,9 @@
                         <viewLayoutGuide key="safeArea" id="8qp-sV-qjf"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="4rr-MJ-AJa"/>
+                    <connections>
+                        <outlet property="textField" destination="huU-f9-kbn" id="E3W-vF-T6r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPU-ZU-Rys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
