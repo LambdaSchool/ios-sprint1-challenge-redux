@@ -11,12 +11,12 @@ class MovieTableViewCell: UITableViewCell {
         }
     }
     
- 
+    
     func update() {
         guard let movie = movie else {return}
         movieLabel.text = movie.name
         button.setTitle(movie.seen ? "seen" : "not seen", for: .normal)
-
+        
     }
     
     
@@ -30,7 +30,7 @@ class MovieTableViewCell: UITableViewCell {
         if let movie = movie {
             movie.seen = !movie.seen
             update()
-
+            
         }
         
         

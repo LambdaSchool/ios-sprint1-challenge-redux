@@ -4,7 +4,7 @@ import UIKit
 
 class MoviesTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, TableUpdater {
     func updateTable() {
-      tableView.reloadData()
+        tableView.reloadData()
         
     }
     
@@ -22,16 +22,16 @@ class MoviesTableViewController: UIViewController, UITableViewDataSource, UITabl
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
+        
         return DB.shared.movies.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-    
         
-      let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         guard let movieCell = cell as? MovieTableViewCell else { return cell }
         
         movieCell.movie = DB.shared.movies[indexPath.row]
@@ -39,7 +39,7 @@ class MoviesTableViewController: UIViewController, UITableViewDataSource, UITabl
         return movieCell
     }
     
-
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         //if (editingStyle == UITableViewCell.EditingStyle.delete) {
         if editingStyle == .delete {
@@ -47,10 +47,10 @@ class MoviesTableViewController: UIViewController, UITableViewDataSource, UITabl
             tableView.deleteRows(at: [indexPath], with: .fade)
             
         }
-    
-    
+        
+        
     }
     
-
+    
 }
 

@@ -101,7 +101,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWM-Sq-6vE">
                                         <rect key="frame" x="0.0" y="50.5" width="375" height="30"/>
-                                        <state key="normal" title="Add"/>
+                                        <state key="normal" title="Add Movie"/>
                                         <connections>
                                             <action selector="add:" destination="phw-IA-rLv" eventType="touchUpInside" id="RYT-XI-8sB"/>
                                         </connections>
