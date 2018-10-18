@@ -13,11 +13,33 @@
         <!--Movies-->
         <scene sceneID="ZEn-SK-FuE">
             <objects>
-                <viewController id="Lk6-Oj-a45" sceneMemberID="viewController">
+                <viewController id="Lk6-Oj-a45" customClass="MovieTableViewController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cvP-Mh-XAO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tjI-FW-pRC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VxC-bD-pI2">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VxC-bD-pI2" id="oSd-q1-kUG">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tjI-FW-pRC" firstAttribute="top" secondItem="24N-Ox-4HB" secondAttribute="top" id="0fy-jA-nT7"/>
+                            <constraint firstItem="tjI-FW-pRC" firstAttribute="leading" secondItem="24N-Ox-4HB" secondAttribute="leading" id="UTQ-ag-j1W"/>
+                            <constraint firstItem="24N-Ox-4HB" firstAttribute="bottom" secondItem="tjI-FW-pRC" secondAttribute="bottom" id="Y7O-OL-Ie4"/>
+                            <constraint firstItem="24N-Ox-4HB" firstAttribute="trailing" secondItem="tjI-FW-pRC" secondAttribute="trailing" id="ZXo-Xa-EuV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="24N-Ox-4HB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Movies" image="Clapboard" id="dfp-w6-47L"/>
@@ -29,7 +51,7 @@
         <!--Add New Movies-->
         <scene sceneID="5Z2-0B-cee">
             <objects>
-                <viewController id="fQg-RA-YiW" sceneMemberID="viewController">
+                <viewController id="fQg-RA-YiW" customClass="AddMovieViewController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vmh-Wt-hIO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="-820" y="-825.33733133433293"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Movie List Tab Bar Controller-->
         <scene sceneID="zH5-nG-ziW">
             <objects>
-                <tabBarController id="3Xf-Z4-uHU" sceneMemberID="viewController">
+                <tabBarController id="3Xf-Z4-uHU" customClass="MovieListTabBarController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B49-Pl-UEM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

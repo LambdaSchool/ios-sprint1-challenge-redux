@@ -6,4 +6,9 @@
 //  Copyright © 2018 Lambda School. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class AddMovieViewController: UIViewController {
+    
+    
+}
