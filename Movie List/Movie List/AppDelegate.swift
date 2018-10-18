@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Movie List
 //
-//  Created by Spencer Curtis on 7/10/18.
-//  Copyright © 2018 Lambda School. All rights reserved.
+//  Created by Sugabelly on 10/18/18.
+//  Copyright © 2018 Lotanna Igwe-Odunze. All rights reserved.
 //
 
 import UIKit
