@@ -16,6 +16,7 @@ class MovieController {
     func createMovie(title: String) {
         let movie = Movie(title: title, seen: false)
         movies.append(movie)
+        movies.sort(by: {$0.title < $1.title})
     }
     
 }
