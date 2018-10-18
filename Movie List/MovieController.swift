@@ -9,6 +9,9 @@ class MovieController {
         
         print(movies.count)
         movies.append(movie)
+        movies.sort(by: {
+             $0.name < $1.name 
+        })
     }
     
     func update(movie: Movie) {
