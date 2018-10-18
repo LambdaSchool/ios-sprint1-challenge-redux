@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="381.60000000000002" y="-410.64467766116945"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Movie List Tab Bar Controller-->
         <scene sceneID="KSY-Hw-tJc">
             <objects>
-                <tabBarController id="yCb-Np-0By" sceneMemberID="viewController">
+                <tabBarController id="yCb-Np-0By" customClass="MovieListTabBarController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ah0-4w-5QH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
