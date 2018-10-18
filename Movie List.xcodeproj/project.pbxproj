@@ -11,6 +11,13 @@
 		467E199220F5165800E7FF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467E199020F5165800E7FF73 /* Main.storyboard */; };
 		467E199420F5165900E7FF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467E199320F5165900E7FF73 /* Assets.xcassets */; };
 		467E199720F5165900E7FF73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467E199520F5165900E7FF73 /* LaunchScreen.storyboard */; };
+		47052FB32178F77900314D19 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47052FB22178F77900314D19 /* Movies.swift */; };
+		470551A92178FD8800E7164B /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470551A82178FD8800E7164B /* MovieController.swift */; };
+		470551AD2178FDB000E7164B /* AddMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470551AC2178FDB000E7164B /* AddMovieViewController.swift */; };
+		470551AF2178FDD600E7164B /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470551AE2178FDD600E7164B /* MovieTableViewController.swift */; };
+		470551B52178FE4400E7164B /* MovieListTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470551B42178FE4400E7164B /* MovieListTabBarController.swift */; };
+		470551B72179091900E7164B /* MovieListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470551B62179091900E7164B /* MovieListProtocol.swift */; };
+		470551B921791C8200E7164B /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470551B821791C8200E7164B /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		467E199320F5165900E7FF73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		467E199620F5165900E7FF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		467E199820F5165900E7FF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47052FB22178F77900314D19 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		470551A82178FD8800E7164B /* MovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
+		470551AC2178FDB000E7164B /* AddMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieViewController.swift; sourceTree = "<group>"; };
+		470551AE2178FDD600E7164B /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		470551B42178FE4400E7164B /* MovieListTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTabBarController.swift; sourceTree = "<group>"; };
+		470551B62179091900E7164B /* MovieListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListProtocol.swift; sourceTree = "<group>"; };
+		470551B821791C8200E7164B /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +66,52 @@
 		467E198B20F5165700E7FF73 /* Movie List */ = {
 			isa = PBXGroup;
 			children = (
+				470551B12178FE1300E7164B /* View Controllers */,
+				470551B32178FE2A00E7164B /* Storyboards */,
+				470551B22178FE1C00E7164B /* Model + Controller */,
+				470551B02178FDEB00E7164B /* Resources */,
+			);
+			path = "Movie List";
+			sourceTree = "<group>";
+		};
+		470551B02178FDEB00E7164B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				467E198C20F5165800E7FF73 /* AppDelegate.swift */,
 				467E199320F5165900E7FF73 /* Assets.xcassets */,
 				467E199820F5165900E7FF73 /* Info.plist */,
-				467E199020F5165800E7FF73 /* Main.storyboard */,
 				467E199520F5165900E7FF73 /* LaunchScreen.storyboard */,
 			);
-			path = "Movie List";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		470551B12178FE1300E7164B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				470551B42178FE4400E7164B /* MovieListTabBarController.swift */,
+				470551AC2178FDB000E7164B /* AddMovieViewController.swift */,
+				470551AE2178FDD600E7164B /* MovieTableViewController.swift */,
+				470551B821791C8200E7164B /* MovieCell.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		470551B22178FE1C00E7164B /* Model + Controller */ = {
+			isa = PBXGroup;
+			children = (
+				470551A82178FD8800E7164B /* MovieController.swift */,
+				47052FB22178F77900314D19 /* Movies.swift */,
+				470551B62179091900E7164B /* MovieListProtocol.swift */,
+			);
+			path = "Model + Controller";
+			sourceTree = "<group>";
+		};
+		470551B32178FE2A00E7164B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				467E199020F5165800E7FF73 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				470551AF2178FDD600E7164B /* MovieTableViewController.swift in Sources */,
+				470551A92178FD8800E7164B /* MovieController.swift in Sources */,
+				470551B921791C8200E7164B /* MovieCell.swift in Sources */,
+				47052FB32178F77900314D19 /* Movies.swift in Sources */,
 				467E198D20F5165800E7FF73 /* AppDelegate.swift in Sources */,
+				470551B52178FE4400E7164B /* MovieListTabBarController.swift in Sources */,
+				470551AD2178FDB000E7164B /* AddMovieViewController.swift in Sources */,
+				470551B72179091900E7164B /* MovieListProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7JG93VFG2G;
 				INFOPLIST_FILE = "$(SRCROOT)/Movie List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,7 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7JG93VFG2G;
 				INFOPLIST_FILE = "$(SRCROOT)/Movie List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
