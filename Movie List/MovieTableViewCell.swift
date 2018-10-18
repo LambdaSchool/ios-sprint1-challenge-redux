@@ -1,24 +1,34 @@
-//
-//  MovieTableViewCell.swift
-//  Movie List
-//
-//  Created by Paul Yi on 10/18/18.
-//  Copyright © 2018 Lambda School. All rights reserved.
-//
-
 import UIKit
 
+protocol MovieTableViewCellDelegate: class {
+    func updateCell(on cell: MovieTableViewCell)
+}
+
 class MovieTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    weak var delegate: MovieTableViewCellDelegate?
+    
+    var movie: Movie? {
+        didSet {
+            updateViews()
+        }
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func updateViews() {
+        guard let movie = movie else { return }
+        movieTitle.text = movie.name
+        if movie.watched == true {
+            watched.setTitle("Watched", for .normal)
+        } else {
+            watched.setTitle("Watch", for .normal)
+        }
     }
+    
+    @IBAction func changeWatchedStatus(_ sender: Any) {
+        delegate?.updateCell(on: self)
+    }
+    
+    @IBOutlet weak var movieTitle: UILabel!
+    @IBOutlet weak var watch: UIButton!
 
 }

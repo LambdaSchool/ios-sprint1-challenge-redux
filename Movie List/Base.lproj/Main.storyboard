@@ -13,7 +13,7 @@
         <!--Movies-->
         <scene sceneID="MV4-gf-aTB">
             <objects>
-                <viewController id="nGg-9F-FZy" sceneMemberID="viewController">
+                <viewController id="nGg-9F-FZy" customClass="MovieTableViewController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3f1-24-j1N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="Gnb-8t-bD7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="Gnb-8t-bD7" customClass="MovieTableViewCell" customModule="Movie_List" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gnb-8t-bD7" id="nmh-WR-poa">
@@ -30,7 +30,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKl-Sh-bzk">
-                                                    <rect key="frame" x="15" y="11" width="42" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="42" height="138"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -40,9 +40,16 @@
                                                     <rect key="frame" x="315" y="6" width="44" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Watch"/>
+                                                    <connections>
+                                                        <action selector="changeWatchedStatus:" destination="Gnb-8t-bD7" eventType="touchUpInside" id="8cg-Jv-GGa"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="movieTitle" destination="uKl-Sh-bzk" id="VQv-OP-asV"/>
+                                            <outlet property="watch" destination="AN1-rc-agi" id="PNG-tl-f7F"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -57,10 +64,13 @@
                         <viewLayoutGuide key="safeArea" id="J45-qw-4GV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Movies" selectedImage="Clapboard" id="UAr-ig-07g"/>
+                    <connections>
+                        <outlet property="movieTableView" destination="lWv-zm-sjd" id="Ycs-Lr-dRv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ur4-fu-Z3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="383" y="255"/>
+            <point key="canvasLocation" x="381.60000000000002" y="254.12293853073464"/>
         </scene>
         <!--Add Movie-->
         <scene sceneID="Lcs-4h-cEr">
