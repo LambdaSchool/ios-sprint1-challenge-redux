@@ -5,8 +5,6 @@ class MovieVC: UIViewController, MovieControllerProtocol {
     var movieController: MovieController?
     
     @IBOutlet weak var name: UITextField!
-    
-    
     @IBAction func submitButton(_ sender: Any) {
         guard let text = name.text else {return}
         movieController?.create(name: text, isSeen: false)
@@ -16,5 +14,4 @@ class MovieVC: UIViewController, MovieControllerProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
 }

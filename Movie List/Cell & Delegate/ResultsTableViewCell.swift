@@ -10,8 +10,9 @@ class ResultsTableViewCell: UITableViewCell {
     
     weak var delegate: ResultsTableViewCellDelegate?
     
+    var movie: Movie?
+    
     @IBAction func seenTapped(_ sender: UIButton) {
-        seenButton.setTitle("Seen", for: .normal)
         delegate?.tappedSeenButton(on: self)
     }
     
