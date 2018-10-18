@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct Movies: Equatabl {
+    let name: String
+    let rating: Int
+    let isSeen: Bool
+}
