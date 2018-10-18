@@ -1,14 +1,14 @@
 //
-//  FirstViewController.swift
+//  NewMovieViewController.swift
 //  Movie List
 //
-//  Created by Sugabelly on 10/18/18.
-//  Copyright © 2018 Lotanna Igwe-Odunze. All rights reserved.
+//  Created by Lotanna on 10/18/18.
+//  Copyright © 2018 Lotanna. All rights reserved.
 //
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class NewMovieViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
