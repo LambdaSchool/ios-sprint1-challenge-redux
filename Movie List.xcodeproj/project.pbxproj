@@ -17,6 +17,7 @@
 		470551AF2178FDD600E7164B /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470551AE2178FDD600E7164B /* MovieTableViewController.swift */; };
 		470551B52178FE4400E7164B /* MovieListTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470551B42178FE4400E7164B /* MovieListTabBarController.swift */; };
 		470551B72179091900E7164B /* MovieListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470551B62179091900E7164B /* MovieListProtocol.swift */; };
+		470551B921791C8200E7164B /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470551B821791C8200E7164B /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		470551AE2178FDD600E7164B /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 		470551B42178FE4400E7164B /* MovieListTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTabBarController.swift; sourceTree = "<group>"; };
 		470551B62179091900E7164B /* MovieListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListProtocol.swift; sourceTree = "<group>"; };
+		470551B821791C8200E7164B /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				470551B42178FE4400E7164B /* MovieListTabBarController.swift */,
 				470551AC2178FDB000E7164B /* AddMovieViewController.swift */,
 				470551AE2178FDD600E7164B /* MovieTableViewController.swift */,
+				470551B821791C8200E7164B /* MovieCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			files = (
 				470551AF2178FDD600E7164B /* MovieTableViewController.swift in Sources */,
 				470551A92178FD8800E7164B /* MovieController.swift in Sources */,
+				470551B921791C8200E7164B /* MovieCell.swift in Sources */,
 				47052FB32178F77900314D19 /* Movies.swift in Sources */,
 				467E198D20F5165800E7FF73 /* AppDelegate.swift in Sources */,
 				470551B52178FE4400E7164B /* MovieListTabBarController.swift in Sources */,
