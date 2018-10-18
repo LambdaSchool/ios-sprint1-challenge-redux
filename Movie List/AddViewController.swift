@@ -16,9 +16,32 @@ class AddViewController: UIViewController {
     
     
     @IBAction func done(_ sender: Any) {
-        guard field.text != nil
-            else { return}
+        //guard field.text != nil
+         //   else { return}
   
+        var content: String = ""
+        var indexPath: IndexPath = IndexPath(row: 0, section: 0)
+        
+        func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            field.text = content
+        }
+        func viewWillDisappear(_ animated: Bool) {
+            
+            super.viewWillDisappear(animated)
+            
+            guard let text = field.text else { return }
+            if !text.isEmpty, text != content {
+                Model.shared.items[indexPath.row] = text
+            }
+        }
+    }
+
+        
+        
+        
+        
+        
   //      weak var delegate: MovieTableViewCell?
         
         
@@ -79,7 +102,7 @@ class AddViewController: UIViewController {
 //
 
         }
-    }
+   // }
     
     
     

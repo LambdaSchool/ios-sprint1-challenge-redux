@@ -9,17 +9,17 @@
 import Foundation
 
 
-class MovieController {
-
-    private(set) var movies: [Movie] = []
-
-    func createMovie (movie: String) {
-        let movie = Movie(movie: movie)
-        movies.append(movie)
-    }
-
-
-}
+//class MovieController {
+//
+//    private(set) var movies: [Movie] = []
+//
+//    func createMovie (movie: String) {
+//        let movie = Movie(movie: movie)
+//        movies.append(movie)
+//    }
+//
+//
+//}
 
 //
 //class Movie {
@@ -36,3 +36,14 @@ class MovieController {
 //
 //    var items: [Entry] = []
 //}
+
+
+
+import UIKit
+
+class Model {
+    static var shared = Model()
+    private init() {}
+    
+    var items: [String] = []
+}
