@@ -24,7 +24,7 @@ class MovieTableViewController: UIViewController, UITableViewDelegate, UITableVi
             let movie = movieController?.movies[indexPath.row] else { return }
         
         movieController?.update(movie: movie)
-        movieTableView.reloadRows(at: <#T##[IndexPath]#>, with: .automatic)
+        movieTableView.reloadRows(at: [indexPath], with: .automatic)
     }
     
     override func viewDidLoad() {

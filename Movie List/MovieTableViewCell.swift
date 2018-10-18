@@ -18,9 +18,9 @@ class MovieTableViewCell: UITableViewCell {
         guard let movie = movie else { return }
         movieTitle.text = movie.name
         if movie.watched == true {
-            watched.setTitle("Watched", for .normal)
+            watch.setTitle("Watched", for: .normal)
         } else {
-            watched.setTitle("Watch", for .normal)
+            watch.setTitle("Watch", for: .normal)
         }
     }
     
