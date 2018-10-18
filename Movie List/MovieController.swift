@@ -24,5 +24,6 @@ class MovieController {
     
     func delete(movie: Movie) {
         guard let index = movies.index(of:movie) else { return }
+        movies.remove(at: index)
     }
 }
