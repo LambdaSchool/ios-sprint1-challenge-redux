@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Un-ks-m2F">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movies-->
+        <scene sceneID="hBs-8e-s77">
+            <objects>
+                <viewController id="1Un-ks-m2F" customClass="MovieListViewController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gje-oI-fLb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gsb-nu-F1m">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Cxl-wE-AEl" customClass="MovieTableViewCell" customModule="Movie_List" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cxl-wE-AEl" id="FJa-tk-aAZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6a3-gH-NDo">
+                                                    <rect key="frame" x="8" y="0.0" width="359" height="43.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title Goes Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHC-v5-ZWm">
+                                                            <rect key="frame" x="0.0" y="11.5" width="279" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVR-c5-h2N">
+                                                            <rect key="frame" x="289" y="7" width="70" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="70" id="ZiZ-bZ-1BT"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Not Seen"/>
+                                                            <connections>
+                                                                <action selector="seenButtonTapped:" destination="Cxl-wE-AEl" eventType="touchUpInside" id="M9a-go-O6c"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="6a3-gH-NDo" secondAttribute="bottom" id="bVa-g7-R08"/>
+                                                <constraint firstItem="6a3-gH-NDo" firstAttribute="leading" secondItem="FJa-tk-aAZ" secondAttribute="leading" constant="8" id="rd0-lf-5ze"/>
+                                                <constraint firstItem="6a3-gH-NDo" firstAttribute="top" secondItem="FJa-tk-aAZ" secondAttribute="top" id="se3-qA-uwH"/>
+                                                <constraint firstAttribute="trailing" secondItem="6a3-gH-NDo" secondAttribute="trailing" constant="8" id="y1s-bv-P4S"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="movieLabel" destination="sHC-v5-ZWm" id="wvo-bf-lgw"/>
+                                            <outlet property="seenButton" destination="kVR-c5-h2N" id="c44-tV-cs0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2XL-hy-Lxl" firstAttribute="trailing" secondItem="Gsb-nu-F1m" secondAttribute="trailing" id="PmG-NX-cSO"/>
+                            <constraint firstItem="Gsb-nu-F1m" firstAttribute="top" secondItem="2XL-hy-Lxl" secondAttribute="top" id="SyC-5b-qoB"/>
+                            <constraint firstItem="Gsb-nu-F1m" firstAttribute="leading" secondItem="2XL-hy-Lxl" secondAttribute="leading" id="c5b-KU-Oyi"/>
+                            <constraint firstItem="2XL-hy-Lxl" firstAttribute="bottom" secondItem="Gsb-nu-F1m" secondAttribute="bottom" id="f9w-0N-mXs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2XL-hy-Lxl"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Movies" image="Clapboard" id="Jsz-qe-Dwi"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="Gsb-nu-F1m" id="JXS-dC-meb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qNy-w1-izl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Clapboard" width="28" height="28"/>
+    </resources>
+</document>
