@@ -16,6 +16,7 @@
 		470551AD2178FDB000E7164B /* AddMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470551AC2178FDB000E7164B /* AddMovieViewController.swift */; };
 		470551AF2178FDD600E7164B /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470551AE2178FDD600E7164B /* MovieTableViewController.swift */; };
 		470551B52178FE4400E7164B /* MovieListTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470551B42178FE4400E7164B /* MovieListTabBarController.swift */; };
+		470551B72179091900E7164B /* MovieListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470551B62179091900E7164B /* MovieListProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		470551AC2178FDB000E7164B /* AddMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieViewController.swift; sourceTree = "<group>"; };
 		470551AE2178FDD600E7164B /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 		470551B42178FE4400E7164B /* MovieListTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTabBarController.swift; sourceTree = "<group>"; };
+		470551B62179091900E7164B /* MovieListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +64,10 @@
 		467E198B20F5165700E7FF73 /* Movie List */ = {
 			isa = PBXGroup;
 			children = (
-				470551B02178FDEB00E7164B /* Resources */,
 				470551B12178FE1300E7164B /* View Controllers */,
 				470551B32178FE2A00E7164B /* Storyboards */,
 				470551B22178FE1C00E7164B /* Model + Controller */,
+				470551B02178FDEB00E7164B /* Resources */,
 			);
 			path = "Movie List";
 			sourceTree = "<group>";
@@ -96,6 +98,7 @@
 			children = (
 				470551A82178FD8800E7164B /* MovieController.swift */,
 				47052FB22178F77900314D19 /* Movies.swift */,
+				470551B62179091900E7164B /* MovieListProtocol.swift */,
 			);
 			path = "Model + Controller";
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				467E198D20F5165800E7FF73 /* AppDelegate.swift in Sources */,
 				470551B52178FE4400E7164B /* MovieListTabBarController.swift in Sources */,
 				470551AD2178FDB000E7164B /* AddMovieViewController.swift in Sources */,
+				470551B72179091900E7164B /* MovieListProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
