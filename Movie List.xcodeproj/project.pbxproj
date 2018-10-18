@@ -14,6 +14,7 @@
 		8463FA3D2178EE80003E03B5 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463FA3C2178EE80003E03B5 /* AddViewController.swift */; };
 		8463FA3F2178F06C003E03B5 /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463FA3E2178F06C003E03B5 /* MovieController.swift */; };
 		8463FA412178F5DB003E03B5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463FA402178F5DB003E03B5 /* Movie.swift */; };
+		8463FA432178F855003E03B5 /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463FA422178F855003E03B5 /* MoviesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8463FA3C2178EE80003E03B5 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		8463FA3E2178F06C003E03B5 /* MovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
 		8463FA402178F5DB003E03B5 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		8463FA422178F855003E03B5 /* MoviesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				467E199020F5165800E7FF73 /* Main.storyboard */,
 				8463FA3C2178EE80003E03B5 /* AddViewController.swift */,
 				8463FA3E2178F06C003E03B5 /* MovieController.swift */,
+				8463FA422178F855003E03B5 /* MoviesTableViewController.swift */,
 				8463FA402178F5DB003E03B5 /* Movie.swift */,
 				467E199520F5165900E7FF73 /* LaunchScreen.storyboard */,
 			);
@@ -144,6 +147,7 @@
 				8463FA3D2178EE80003E03B5 /* AddViewController.swift in Sources */,
 				467E198D20F5165800E7FF73 /* AppDelegate.swift in Sources */,
 				8463FA412178F5DB003E03B5 /* Movie.swift in Sources */,
+				8463FA432178F855003E03B5 /* MoviesTableViewController.swift in Sources */,
 				8463FA3F2178F06C003E03B5 /* MovieController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

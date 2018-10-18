@@ -7,12 +7,19 @@
 //
 
 import Foundation
-
+//// mabye codable instead of equatable
 struct Movie: Equatable {
     let movie: String
-    
+
     init(movie: String) {
         self.movie = movie
     }
-    
+
 }
+
+
+//struct Movie: Codable {
+//    let title: String
+//    let note: String
+//    let done: Bool
+//}

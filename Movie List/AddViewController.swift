@@ -10,14 +10,66 @@ import UIKit
 
 class AddViewController: UIViewController {
 
+    //var movieController: MovieController {
     
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var field: UITextField!
     
     
-    @IBAction func addButton(_ sender: Any) {
-        guard textField.text != nil
+    @IBAction func done(_ sender: Any) {
+        guard field.text != nil
             else { return}
+  
         
+        
+//        @objc
+//        func addEntry() {
+//            if let text = field.text, !text.isEmpty { //see if text is there
+//                let entry = Entry(title: text, note: textview.text, done: done.isOn) // if its there it adds it
+//                Model.shared.items.append(entry) // this saves it
+//            }
+//            navigationController?.popViewController(animated: true) //if the save it it doesnt let them safe again unless modified
+//        }
+//
+//        @objc
+//        func saveEntry() {
+//
+//            guard let indexPath = indexPath else { //make sure text is there and not empty
+//                fatalError("Failed to unwrap guaranteed indexPath")
+//            }
+//
+//            if let text = field.text, !text.isEmpty {
+//                let entry = Entry(title: text, note: textview.text, done: done.isOn) // creates new entry replaces old
+//                Model.shared.items[indexPath.row] = entry
+//            }
+//
+//            navigationController?.popViewController(animated: true) //when you save you want to be done
+//        }
+//
+//        override func viewWillAppear(_ animated: Bool) {
+//            if let indexPath = indexPath { // optional unwrapping
+//                assert(indexPath.row < Model.shared.items.count, "Out of range indexPath") //crashes if condition is false
+//
+//                let entry = Model.shared.items[indexPath.row] //
+//                field.text = entry.title // puts title in text
+//                textview.text = entry.note // puts note in text
+//                done.isOn = entry.done
+//            }
+//
+//            //makes add or save button work
+//            let barButton = UIBarButtonItem(title: nil, style: .plain, target: self, action: nil)
+//            navigationItem.rightBarButtonItem = barButton
+//            switch indexPath {
+//            case nil: // new record
+//                barButton.title = "Add"
+//                barButton.action = #selector(addEntry) // wraps up add entry  function use as var
+//            default: // modify record
+//                barButton.title = "Save"
+//                barButton.action = #selector(saveEntry)
+//            }
+//
+//
+//
+//
 
         }
     }
