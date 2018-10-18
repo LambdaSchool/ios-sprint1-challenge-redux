@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "1045-clapboard.png",
+      "filename" : "1045-clapboard@3x.png",
       "scale" : "1x"
     },
     {
@@ -12,7 +12,7 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "1045-clapboard@3x.png",
+      "filename" : "1045-clapboard@2x-1.png",
       "scale" : "3x"
     }
   ],
