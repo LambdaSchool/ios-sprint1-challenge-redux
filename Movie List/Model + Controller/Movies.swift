@@ -8,13 +8,17 @@
 
 import Foundation
 
-// create a model, Name(Title) of movie, Rating(if provided), and isSeen button(Change to a switch)
+/* create a model, Name(Title) of movie,
+ Rating(if provided),
+ and isSeen button(Change to a switch) if time allows
+  */
+
 struct Movies: Equatable {
     let name: String
-    let rating: Int?
+    let rating: String?
     let isSeen: Bool
     
-    init(name:String, rating:Int?, isSeen: Bool) {
+    init(name:String, rating:String?, isSeen: Bool) {
         self.name = name
         self.rating = rating
         self.isSeen = false

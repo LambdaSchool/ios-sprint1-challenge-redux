@@ -10,5 +10,8 @@ import UIKit
 
 class MovieListTabBarController: UITabBarController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
 }

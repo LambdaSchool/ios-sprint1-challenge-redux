@@ -31,6 +31,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Lk6-Oj-a45" id="hQb-hR-lzT"/>
+                                    <outlet property="delegate" destination="Lk6-Oj-a45" id="Oop-vQ-52U"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -82,12 +86,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Add Movie"/>
+                                <connections>
+                                    <action selector="createMovieButton:" destination="fQg-RA-YiW" eventType="touchUpInside" id="dRK-a7-sxi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40673044800000002" green="1" blue="0.9802590296" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="FSp-Ys-x3t"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add New Movies" image="Plus" id="s9u-Oq-ww8"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="xQV-Vz-vUC" id="mwG-Ag-y9h"/>
+                        <outlet property="ratingTextField" destination="Lx9-wb-hm3" id="gkh-LF-OVF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5j-69-kmw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
