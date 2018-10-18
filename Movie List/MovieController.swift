@@ -10,13 +10,29 @@ import Foundation
 
 
 class MovieController {
-    
+
     private(set) var movies: [Movie] = []
-    
+
     func createMovie (movie: String) {
         let movie = Movie(movie: movie)
         movies.append(movie)
     }
-    
-    
+
+
 }
+
+//
+//class Movie {
+//    static let shared = Movie()
+//    private init() {}
+//
+//    var items: [Entry] = []
+//}
+
+
+//class Model {
+//    static let shared = Model()
+//    private init() {}
+//
+//    var items: [Entry] = []
+//}

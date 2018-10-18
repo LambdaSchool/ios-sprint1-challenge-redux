@@ -13,7 +13,7 @@
         <!--Item 2-->
         <scene sceneID="dqo-j1-ygB">
             <objects>
-                <viewController id="BgI-5J-olt" sceneMemberID="viewController">
+                <viewController id="BgI-5J-olt" customClass="AddViewController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x6n-kw-Eke">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,51 +40,53 @@
         <scene sceneID="M4K-nq-Skf">
             <objects>
                 <viewController id="aVe-lo-1Ft" customClass="AddViewController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8Pc-5a-aFZ">
+                    <view key="view" contentMode="scaleToFill" id="8Pc-5a-aFZ" customClass="ADBannerView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Add a new Movie to the List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VR3-QI-z8g">
-                                <rect key="frame" x="8" y="28" width="359" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the movie's title:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="huU-f9-kbn">
-                                <rect key="frame" x="8" y="86.5" width="359" height="29.5"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNu-oI-O9Q">
-                                <rect key="frame" x="151" y="142" width="73" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="rys-F9-NRq">
+                                <rect key="frame" x="8" y="28" width="359" height="162.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Add a new Movie to the List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VR3-QI-z8g">
+                                        <rect key="frame" x="20.5" y="0.0" width="318.5" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the movie's title:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="huU-f9-kbn">
+                                        <rect key="frame" x="0.0" y="67.5" width="359" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNu-oI-O9Q">
+                                        <rect key="frame" x="143" y="132.5" width="73" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="bdd-UX-Qem"/>
+                                        </constraints>
+                                        <state key="normal" title="Add Movie"/>
+                                        <connections>
+                                            <action selector="done:" destination="aVe-lo-1Ft" eventType="touchUpInside" id="6sJ-RN-9f5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="bdd-UX-Qem"/>
+                                    <constraint firstAttribute="trailing" secondItem="huU-f9-kbn" secondAttribute="trailing" id="jWq-ut-llH"/>
+                                    <constraint firstItem="huU-f9-kbn" firstAttribute="leading" secondItem="rys-F9-NRq" secondAttribute="leading" id="nzf-gu-OT5"/>
                                 </constraints>
-                                <state key="normal" title="Add Movie"/>
-                                <connections>
-                                    <action selector="addButton:" destination="aVe-lo-1Ft" eventType="touchUpInside" id="LyM-nb-OAz"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="dNu-oI-O9Q" firstAttribute="top" secondItem="huU-f9-kbn" secondAttribute="bottom" constant="26" id="1F4-YS-NIs"/>
-                            <constraint firstItem="huU-f9-kbn" firstAttribute="top" secondItem="VR3-QI-z8g" secondAttribute="bottom" constant="25.5" id="5PB-U4-cyc"/>
-                            <constraint firstItem="dNu-oI-O9Q" firstAttribute="top" secondItem="huU-f9-kbn" secondAttribute="bottom" constant="26" id="6Q8-Tu-dBJ"/>
-                            <constraint firstItem="8qp-sV-qjf" firstAttribute="trailing" secondItem="huU-f9-kbn" secondAttribute="trailing" constant="8" id="Djo-Y0-85X"/>
-                            <constraint firstItem="8qp-sV-qjf" firstAttribute="trailing" secondItem="VR3-QI-z8g" secondAttribute="trailing" constant="8" id="HHq-78-ewS"/>
-                            <constraint firstItem="VR3-QI-z8g" firstAttribute="top" secondItem="8qp-sV-qjf" secondAttribute="top" constant="8" id="HhB-8r-YDS"/>
-                            <constraint firstItem="dNu-oI-O9Q" firstAttribute="centerX" secondItem="huU-f9-kbn" secondAttribute="centerX" id="Iyz-ij-8rd"/>
-                            <constraint firstItem="huU-f9-kbn" firstAttribute="leading" secondItem="8qp-sV-qjf" secondAttribute="leading" constant="8" id="PmE-Xf-Bym"/>
-                            <constraint firstItem="VR3-QI-z8g" firstAttribute="leading" secondItem="8qp-sV-qjf" secondAttribute="leading" constant="8" id="pP1-4r-rnP"/>
-                            <constraint firstItem="8qp-sV-qjf" firstAttribute="bottom" secondItem="dNu-oI-O9Q" secondAttribute="bottom" constant="446" id="xma-sh-Mbs"/>
+                            <constraint firstItem="8qp-sV-qjf" firstAttribute="trailing" secondItem="rys-F9-NRq" secondAttribute="trailing" constant="8" id="ftg-Jm-KVy"/>
+                            <constraint firstItem="rys-F9-NRq" firstAttribute="top" secondItem="8qp-sV-qjf" secondAttribute="top" constant="8" id="gmN-Mf-7ik"/>
+                            <constraint firstItem="rys-F9-NRq" firstAttribute="leading" secondItem="8qp-sV-qjf" secondAttribute="leading" constant="8" id="mIN-GK-LBB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8qp-sV-qjf"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="4rr-MJ-AJa"/>
                     <connections>
-                        <outlet property="textField" destination="huU-f9-kbn" id="E3W-vF-T6r"/>
+                        <outlet property="field" destination="huU-f9-kbn" id="5U3-E4-VmR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPU-ZU-Rys" userLabel="First Responder" sceneMemberID="firstResponder"/>
