@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Movies-->
         <scene sceneID="ZEn-SK-FuE">
             <objects>
                 <viewController id="Lk6-Oj-a45" sceneMemberID="viewController">
@@ -20,13 +20,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="24N-Ox-4HB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="dfp-w6-47L"/>
+                    <tabBarItem key="tabBarItem" title="Movies" image="Clapboard" id="dfp-w6-47L"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXC-l8-V8S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-820" y="-162"/>
         </scene>
-        <!--Item 1-->
+        <!--Add New Movies-->
         <scene sceneID="5Z2-0B-cee">
             <objects>
                 <viewController id="fQg-RA-YiW" sceneMemberID="viewController">
@@ -36,7 +36,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FSp-Ys-x3t"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="s9u-Oq-ww8"/>
+                    <tabBarItem key="tabBarItem" title="Add New Movies" image="Plus" id="s9u-Oq-ww8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5j-69-kmw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,4 +61,8 @@
             <point key="canvasLocation" x="-1773" y="-491"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Clapboard" width="28" height="28"/>
+        <image name="Plus" width="28" height="28"/>
+    </resources>
 </document>
