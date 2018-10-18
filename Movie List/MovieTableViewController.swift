@@ -1,6 +1,7 @@
 import UIKit
 
 class MovieTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MovieControllerProtocol, MovieTableViewCellDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movieController?.movies.count ?? 0
     }
