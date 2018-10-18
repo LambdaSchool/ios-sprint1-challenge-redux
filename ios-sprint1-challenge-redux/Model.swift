@@ -26,6 +26,8 @@ class DB {
     
     func createMovie(name: String) {
         movies.append(Movie(name: name, seen: false))
+        movies.sort(by: {$0.name < $1.name})
         updater?.updateTable()
+        
     }
 }
