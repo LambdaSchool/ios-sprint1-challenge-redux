@@ -10,11 +10,13 @@ import UIKit
 
 class AddMovieViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var textField: UITextField!
+    @IBAction func addMovieButton(_ sender: Any) {
+        guard let text = textField.text, !text.isEmpty else {return}
+        MovieController.shared.createMovie(title: text)
+        textField.text = ""
     }
+    
     
 
     /*
