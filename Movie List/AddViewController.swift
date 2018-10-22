@@ -16,10 +16,10 @@ class AddViewController: UIViewController {
         var content: String = ""
         var indexPath: IndexPath = IndexPath(row: 0, section: 0)
         
-        var movie = Movie[title: String, note: String, done: Bool]
-        field.text = movie
-        .textLabel?.text = Model.shared.items[indexPath.row].title
-        return Movie
+//        var movie = Movie[title: String, note: String, done: Bool]
+//        field.text = movie
+//        .textLabel?.text = Model.shared.items[indexPath.row].title
+//        return Movie
     }
 }
 
